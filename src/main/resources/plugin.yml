@@ -1,0 +1,46 @@
+name: bulerman.lol
+version: '1.1-HOTFIX'
+main: org.blol.Main
+api-version: 1.20
+authors: [real]
+
+commands:
+  adm:
+    description: 'Wysyła wiadomość tylko dla admina'
+    aliases: [adminchat, admin, admc]
+  chaton:
+    description: 'Włącza możliwość pisania na czacie'
+  chatoff:
+    description: 'Wyłącza możliwość pisania na czacie'
+  helpop:
+    description: 'Wysyła wiadomość do administracji serwera'
+  portalcfg:
+    description: 'Umożliwia włączanie/wyłączanie portali do endu i netheru'
+  blol:
+    description: 'cos tam o pluginie bla bla bla'
+
+permissions:
+  blol.adminchat:
+    description: 'Allows user to use admin chat'
+    default: op
+  blol.chatmgr:
+    description: 'Allows to turn on/off the chat'
+    default: op
+  blol.chatmgr.bypass:
+    description: 'Allows to bypass turned off chat'
+    default: op
+  blol.blockres.bypass:
+    description: 'Allows to bypass builtin block restrictions'
+    default: op
+  blol.portalcfg:
+    description: 'Allows to turn on/off portals'
+    default: op
+  blol.helpop.receive:
+    description: 'Allows to receive helpop messages'
+    default: op
+  blol.reload:
+    description: 'Allows to reload the plugin'
+    default: op
+
+libraries:
+  - com.squareup.okhttp3:okhttp:5.0.0-alpha.14
